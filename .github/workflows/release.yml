@@ -2,10 +2,10 @@ name: Release
 
 on:
   pull_request:
-    branches:
-      - 'release/**'
     types:
-      - closed
+      - opened
+    branches:
+      - 'releases/**'
 
 permissions:
   id-token: write
