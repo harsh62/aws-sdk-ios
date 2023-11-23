@@ -26,7 +26,7 @@
 #import "AWSMachineLearningResources.h"
 
 static NSString *const AWSInfoMachineLearning = @"MachineLearning";
-NSString *const AWSMachineLearningSDKVersion = @"2.33.15";
+NSString *const AWSMachineLearningSDKVersion = @"2.33.16";
 
 
 @interface AWSMachineLearningResponseSerializer : AWSJSONResponseSerializer
