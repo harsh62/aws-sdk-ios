@@ -16,7 +16,7 @@ jobs:
   run_if:
     if: |
       startsWith(github.head_ref, 'releases/') &&
-      startsWith(github.event.head_commit.message, 'chore: bump version and kick off release:') &&
+      contains(github.event.head_commit.message, 'chore: bump version and kick off release:') &&
       github.event.pull_request.merged == true
       
     runs-on: ubuntu-latest
