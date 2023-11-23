@@ -2,7 +2,7 @@
 
 ## Unreleased
 
--Features for next 
+-Features for next release
 
 ## 2.33.27
 
