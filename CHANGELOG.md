@@ -4,6 +4,10 @@
 
 -Features for next release
 
+## 2.33.27
+
+-Features for next release
+
 ## 2.33.26
 
 -Features for next release
