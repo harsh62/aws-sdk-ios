@@ -13,10 +13,12 @@ permissions:
   pull-requests: write
 
 jobs:
-  run_if:
+  run_release_if:
+    name: Run release if it matches all criterion
     if: |
       startsWith(github.head_ref, 'releases/') &&
-      github.event.pull_request.merged == true
+      github.event.pull_request.merged == true &&
+      contains(github.event.pull_request.title, 'chore: bump version and kick off release:')
       
     runs-on: ubuntu-latest
     steps:
@@ -24,9 +26,8 @@ jobs:
 
   extract-release-version:
     name: Extract Release Version
-    if: contains(github.event.pull_request.title, 'bump version and kick off release')
     needs:
-      - run_if
+      - run_release_if
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.extract-release-version.outputs.result }}
