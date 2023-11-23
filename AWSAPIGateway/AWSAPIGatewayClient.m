@@ -23,7 +23,7 @@ NSString *const AWSAPIGatewayErrorHTTPHeaderFieldsKey = @"HTTPHeaderFields";
 
 static NSString *const AWSAPIGatewayAPIKeyHeader = @"x-api-key";
 
-NSString *const AWSAPIGatewaySDKVersion = @"2.33.21";
+NSString *const AWSAPIGatewaySDKVersion = @"2.33.22";
 
 static int defaultChunkSize = 1024;
 
