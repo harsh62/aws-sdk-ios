@@ -24,9 +24,9 @@ jobs:
 
   extract-release-version:
     name: Extract Release Version
+    if: contains(github.event.head_commit.message, 'bump version and kick off release')
     needs:
       - run_if
-    if: contains(github.event.head_commit.message, 'chore: bump version and kick off release:')
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.extract-release-version.outputs.result }}
