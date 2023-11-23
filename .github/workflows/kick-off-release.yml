@@ -62,7 +62,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh pr create \
-          --title "bump iOS SDK version to $RELEASE_VERSION" \
-          --body "bump version to $RELEASE_VERSION" \
+          --title "chore: bump version and kick off release: $RELEASE_VERSION" \
+          --body "chore: bump version and kick off release: $RELEASE_VERSION" \
           --head bump-version/$RELEASE_VERSION \
           --base main
