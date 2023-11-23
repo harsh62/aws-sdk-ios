@@ -25,7 +25,7 @@
 #import "AWSTranscribeResources.h"
 
 static NSString *const AWSInfoTranscribe = @"Transcribe";
-NSString *const AWSTranscribeSDKVersion = @"2.33.17";
+NSString *const AWSTranscribeSDKVersion = @"2.33.18";
 
 
 @interface AWSTranscribeResponseSerializer : AWSJSONResponseSerializer

@@ -25,7 +25,7 @@
 #import "AWSSQSResources.h"
 
 static NSString *const AWSInfoSQS = @"SQS";
-NSString *const AWSSQSSDKVersion = @"2.33.17";
+NSString *const AWSSQSSDKVersion = @"2.33.18";
 
 
 @interface AWSSQSResponseSerializer : AWSXMLResponseSerializer
