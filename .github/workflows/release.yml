@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   run_release_if:
-    name: Run release if it matches all criterion
+    name: Validate release criterion
     if: |
       startsWith(github.head_ref, 'releases/') &&
       github.event.pull_request.merged == true &&
@@ -22,7 +22,7 @@ jobs:
       
     runs-on: ubuntu-latest
     steps:
-      - run: echo "All the conditions to initialize have been met. Initializing release for ${{ github.event.pull_request.title }}"
+      - run: echo "All the conditions to initialize have been met. Initializing release."
 
   extract-release-version:
     name: Extract Release Version
