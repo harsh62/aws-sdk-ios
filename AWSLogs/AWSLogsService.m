@@ -25,7 +25,7 @@
 #import "AWSLogsResources.h"
 
 static NSString *const AWSInfoLogs = @"Logs";
-NSString *const AWSLogsSDKVersion = @"2.33.12";
+NSString *const AWSLogsSDKVersion = @"2.33.13";
 
 
 @interface AWSLogsResponseSerializer : AWSJSONResponseSerializer
