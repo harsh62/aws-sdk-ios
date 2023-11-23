@@ -53,7 +53,7 @@ jobs:
           git config user.name aws-amplify-ops
           git config user.email aws-amplify-ops@amazon.com
           git add -A
-          git commit -am "[bump version $RELEASE_VERSION]"
+          git commit -am "chore: bump version and kick off release: $RELEASE_VERSION"
           git push origin HEAD
         shell: bash
 
