@@ -65,4 +65,4 @@ jobs:
           --title "bump iOS SDK version to $RELEASE_VERSION" \
           --body "bump version to $RELEASE_VERSION" \
           --head bump-version/$RELEASE_VERSION \
-          --base release
+          --base main
